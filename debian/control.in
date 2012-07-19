@@ -1,0 +1,15 @@
+Source: canaima-caribay-sysctl
+Section: config
+Priority: extra
+Maintainer: Ernesto Nadir Crespo Avila <ecrespo@cenditel.gob.ve>
+Build-Depends: cdbs (>= 0.4.23-1.1), debhelper (>= 4.2.0), config-package-dev (>= 4.5~)
+Standards-Version: 3.9.2
+
+Package: canaima-caribay-sysctl
+Architecture: all
+Pre-Depends: canaima-caribay-video
+Depends: cdbs, ${misc:Depends}
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Archivo de configuracion de sysctl
+ Archivo de configuracion de sysctl para optimizar las aplicaciones de video.
